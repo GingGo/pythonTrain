@@ -1,26 +1,5 @@
-friends = ["Terry", "Mike", "Nelson", "Greg"]
-friends.insert(2, "Eric")
-print(friends)
-
-
-friends.remove("Nelson")
-print(friends)
-
-friendsTest = friends
-print(friendsTest)
-# friendsTest.clear()
-# print(friendsTest)
-friendsTest.sort()
-print(friendsTest)
-
-nums = [6, 4, -1, 0, -5]
-nums.sort()
-print(nums)
-
-nums.reverse()
-print(nums)
-
-nums.append(10)
-print(nums)
-nums.pop()
-print(nums)
+x = [1, 2, 3, 4, 5, 6]
+y = x.copy()
+y[0] = 15
+print(x)
+print(y)
