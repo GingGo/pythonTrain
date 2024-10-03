@@ -1,5 +1,11 @@
-x = [1, 2, 3, 4, 5, 6]
-y = x.copy()
-y[0] = 15
-print(x)
-print(y)
+person = {"name": "Terry", "age": 25}
+print(person["name"])
+
+person2 = {"x": {"age": [10, 20, 30]}}
+
+print(person2["x"]["age"][2])
+
+te = {}
+te["name"] = "Jason"
+te["age"] = 40
+print(te)
