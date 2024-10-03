@@ -1,4 +1,5 @@
-person = {"name": "Terry", "age": 25}
-print(person.keys())
-print(person.values())
-print(person.items())
+myTuple = (10, "100", "Hello")
+print(len(myTuple))
+print(myTuple[0])
+print(myTuple.count(10))
+print(myTuple.index("Hello"))
