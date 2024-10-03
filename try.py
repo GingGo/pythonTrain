@@ -1,15 +1,9 @@
-x = 10, 15
-print(x)
-print(type(x))
+a = ([1, 2, 3], "Terry")
+a[0][1] = 100
+print(a)
 
-y = ("Terry", 25)
+# if an element in a tuple is mutable, then we can just
+# select the element, and then change it.
 
-name, age = y
-print(name)
-print(age)
-
-a = 25
-b = 35
-
-a, b = b, a
-print(f"{a}, {b}")
+# If we want to use a tuple as a dictionary key, then
+# all elements in the tuple has to be immutable.
