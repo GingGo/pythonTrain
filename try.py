@@ -1,7 +1,11 @@
-print("Today is a bad day".count('a'))
+friendList = ["Mike", "Josh", "Jerry"]
+print(f"{friendList[0]}, {friendList[1]}, {friendList[2]} are my friends")
 
-name = "Terry"
+print(len(friendList))
 
-print(name.startswith("T"))
+luckyNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(luckyNumber[::-1])
 
-print(name.endswith("try"))
+x = [1, 2, 2]
+x[1] = 10
+print(x)
