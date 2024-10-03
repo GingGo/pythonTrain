@@ -1,3 +1,9 @@
-myStr1 = "Hello"
-myStr2 = "my name is Terry"
-print(myStr1 + myStr2)
+print(len("Test"))
+print(int(455))
+print("test".upper())
+print("AAA".lower())
+
+name = "Terry"
+print(name.upper().isupper())
+
+print(name.index("rr"))
