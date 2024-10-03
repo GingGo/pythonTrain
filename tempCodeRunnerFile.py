@@ -1,0 +1,2 @@
+friendsTest.clear()
+# print(friendsTest)

@@ -1,11 +1,26 @@
-friendList = ["Mike", "Josh", "Jerry"]
-print(f"{friendList[0]}, {friendList[1]}, {friendList[2]} are my friends")
+friends = ["Terry", "Mike", "Nelson", "Greg"]
+friends.insert(2, "Eric")
+print(friends)
 
-print(len(friendList))
 
-luckyNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(luckyNumber[::-1])
+friends.remove("Nelson")
+print(friends)
 
-x = [1, 2, 2]
-x[1] = 10
-print(x)
+friendsTest = friends
+print(friendsTest)
+# friendsTest.clear()
+# print(friendsTest)
+friendsTest.sort()
+print(friendsTest)
+
+nums = [6, 4, -1, 0, -5]
+nums.sort()
+print(nums)
+
+nums.reverse()
+print(nums)
+
+nums.append(10)
+print(nums)
+nums.pop()
+print(nums)
