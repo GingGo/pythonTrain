@@ -1,4 +1,3 @@
-# I said "Good morning"
-print("I said 'Good morning'")
-
-print("aaaaaaa\nbbbbbbb")
+myStr1 = "Hello"
+myStr2 = "my name is Terry"
+print(myStr1 + myStr2)
