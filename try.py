@@ -1,5 +1,2 @@
-a = "c"
-b = "Terrcy"
-
-if a in b:
-    print(f"{a} is in {b}.")
+if 2 or (10/0):
+    print("We got no error")
