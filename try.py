@@ -1,2 +1,12 @@
-if 2 or (10/0):
-    print("We got no error")
+if False:
+    print("This is True")
+else:
+    print("This is false")
+
+
+age = 5
+
+if (age < 8):
+    print("movie is free for you")
+else:
+    print("You need to pay $300")
