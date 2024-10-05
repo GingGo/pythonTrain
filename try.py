@@ -1,25 +1,35 @@
-def sum(*args):
-    ret = 0
-    print(args)
-    print(type(args))
-    for i in range(len(args)):
-        ret += args[i]
-    return ret
+def higherOrder(fn):
+    fn()
 
 
-print(sum(1, 2, 3, 4, 5, 6, 7, 8))
+def smallFunc():
+    print("Hello from small function.")
 
 
-def myFunc(**kwargs):
-    print(kwargs)
-    print(type(kwargs))
+higherOrder(smallFunc)
 
 
-myFunc(name="Terry", age=25, addr="Taipei")
+def square(num):
+    return num ** 2
 
 
-def myFunc2(*args, **kwargs):
-    print("I would like to eat {} {}".format(args[1], kwargs["food"]))
+myList = [-10, 3, 9, 8, 10]
 
 
-myFunc2(1, 5, 10, "Hello", name="Terry", food="eggs")
+print(map(square, myList))
+
+for item in map(square, myList):
+    print(item)
+
+print("-----------------------------------")
+
+
+def even(num):
+    if num % 2 == 0:
+        return True
+
+
+evencheckList = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for i in filter(even, evencheckList):
+    print(i)
