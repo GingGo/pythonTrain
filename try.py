@@ -1,6 +1,6 @@
-def exponent(a, b):
-    return a**b
+def sum(n1, n2=0):
+    return n1 + n2
 
 
-print(exponent(2, 3))
-print(exponent(b=3, a=2))
+print(sum(12, 25))
+print(sum(55))
