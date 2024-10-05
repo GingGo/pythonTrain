@@ -1,9 +1,9 @@
-getStr = input("Enter input:")
+for letter in "Hello World":
+    print(letter)
 
-match getStr:
-    case "a" | "t":
-        print("Input a or t")
-    case "b":
-        print("Input b")
-    case _:
-        print("Other Input")
+for tuple in [(1, 2), (3, 5), (7, 9)]:
+    print(tuple)
+
+
+for a, b in [(1, 2), (3, 5), (7, 9)]:
+    print(a, b)
