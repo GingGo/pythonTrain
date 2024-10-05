@@ -1,11 +1,3 @@
-for counter, c in enumerate("How are you today?"):
-    if counter < 10:
-        print(c)
-
-
-x = [1, 2, 3]
-y = ["A", "B", "C"]
-z = ["A", "B", "C", "D"]
-
-for t in zip(x, y, z):
-    print(t)
+x = [1, 2, 3, 4]
+y = [i ** 2 for i in x if i < 3]
+print(y)
