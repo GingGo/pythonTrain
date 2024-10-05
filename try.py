@@ -1,12 +1,19 @@
-def sayHi():
-    print("Hello, how are you")
+a = 5
 
 
-sayHi()
+def f1():
+    x = 2
+    y = 3
+    print(x, y, a)
 
 
-def addition(x, y, z):
-    print(x+y+z)
+f1()
 
 
-addition(1, 6, 8)
+def change(num):
+    global a
+    a = num
+
+
+change(25)
+print(a)
