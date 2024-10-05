@@ -1,19 +1,8 @@
-a = 5
+def myAddition(a, b):
+    print(a+b)
+    return a+b
 
 
-def f1():
-    x = 2
-    y = 3
-    print(x, y, a)
-
-
-f1()
-
-
-def change(num):
-    global a
-    a = num
-
-
-change(25)
-print(a)
+r1 = myAddition(10, 18)
+r2 = myAddition(6, 10)
+print(r1+r2)

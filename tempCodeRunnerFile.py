@@ -1,2 +1,1 @@
-friendsTest.clear()
-# print(friendsTest)
+18
