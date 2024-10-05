@@ -1,4 +1,3 @@
-x = 0
-while x < 5:
-    print(x)
-    x += 1
+for i in "1234":
+    for j in "abcdefghijk":
+        print(i, j)
