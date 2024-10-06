@@ -1,5 +1,12 @@
-ret = (lambda x: x**2)(5)
-print(ret)
+def addtion(a, b):
+    return a + b
 
-mytuple = (lambda x, y: (x+y, x-y))(1, 6)
-print(mytuple)
+
+def substraction(a, b):
+    return a - b
+
+
+addtion = substraction
+
+
+print(addtion(10, 5))
