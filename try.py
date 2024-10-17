@@ -1,2 +1,2 @@
-with open("test.txt", mode="a") as myfile:
-    myfile.write("TERRRR\n")
+import os
+os.remove("index.html")
