@@ -1,12 +1,2 @@
-def addtion(a, b):
-    return a + b
-
-
-def substraction(a, b):
-    return a - b
-
-
-addtion = substraction
-
-
-print(addtion(10, 5))
+with open("test.txt", mode="a") as myfile:
+    myfile.write("TERRRR\n")
