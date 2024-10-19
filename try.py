@@ -1,20 +1,21 @@
-class Employee:
-    def __init__(self):
-        self.income = 0
-        self.__tax = 0
+class Robot:
+    def __init__(self, name, age, address):
+        self.name = name
+        self.age = age
+        self.address = address
 
-    def earn_money(self, money):
-        self.income += money
-        self.__tax += self.income * 0.05
+    def __key(self):
+        return (self.name, self.age, self.address)
 
-    def get_tax(self):
-        return self.__tax
+    def __hash__(self):
+        return hash(self.__key())
 
-    @property
-    def tax_amount(self):
-        return self.income * 0.05
+    def __eq__(self, other):
+        if isinstance(other, Robot):
+            return self.__key() == other.__key()
+        return NotImplemented
 
 
-Terry = Employee()
-Terry.earn_money(300)
-print(Terry.tax_amount)
+robot = Robot("Terry", 25, "Taiwan")
+robot1 = Robot("Terry", 25, "Taiwan")
+print(robot == robot1)
