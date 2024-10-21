@@ -1,9 +1,15 @@
-import ageAge
+def divide(a, b):
+    if type(a) != int or type(b) != int:
+        raise ValueError("Not vaild type given!")
+
+    if b == 0:
+        raise ZeroDivisionError("Second argument can't be 0")
+
+    return a / b
+
 
 try:
-    num = "qsqs"
-    ageAge.enter_age(num)
-except ageAge.NegativeNumberException as err:
-    print(err)
-except:
-    print("Something we don't know error")
+    print(divide(10, "hello"))
+
+except Exception as e:
+    print(e)
